@@ -1,14 +1,16 @@
 package lib.book.tests;
 
-import lib.book.lombok.LoginBodyLombokModel;
-import lib.book.lombok.LoginResponseLombokModel;
+import lib.book.pojo.RequestModel;
+import lib.book.pojo.ResponseModel;
+import lib.book.specs.LoginSpecs;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static lib.book.specs.LoginSpecs.*;
+import static lib.book.helpers.Generators.getAllDataForPut;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class BookTests {
+public class BookTests extends LoginSpecs {
+
     @Test
     void bookGettingTest() {
         given(request)
@@ -31,37 +33,31 @@ public class BookTests {
 
     @Test
     void addNewBookTest() {
-        LoginBodyLombokModel data = new LoginBodyLombokModel();
+        RequestModel data = new RequestModel();
         data.setName("Mirror");
 
-        LoginResponseLombokModel response = given(request)
+        ResponseModel response = given(request)
                 .body(data)
                 .when()
                 .post("/books")
                 .then()
                 .log().status()
                 .spec(response201)
-                .extract().as(LoginResponseLombokModel.class);
-        assertThat(response.getName()).isEqualTo("Mirror");
+                .extract().as(ResponseModel.class);
+
+        assertThat(response.getBook().getName()).isEqualTo("Mirror");
     }
 
     @Test
     void updateInfoTest() {
-        LoginBodyLombokModel data = new LoginBodyLombokModel();
-        data.setName("History");
-        data.setYear("1997");
-        data.setAuthor("Ivanov");
-        data.setIsElectronicBook("false");
-
-        LoginResponseLombokModel response = given(request)
-                .body(data)
-                .when()
-                .put("/books/5")
-                .then()
-                .log().status()
-                .spec(response201)
-                .extract().as(LoginResponseLombokModel.class);
-        assertThat(response.getName()).isEqualTo("History");
+        //Arrange
+        ResponseModel responseOfPost = apiSteps.createNewBook();
+        //Act
+        ResponseModel responseOfPut = apiSteps.editBook(responseOfPost.getBook().getId());
+        //Assert
+        assertThat(responseOfPut.getBook().getName()).isNotEqualTo(responseOfPost.getBook().getName());
+        //cleanup
+        apiSteps.deleteBook(responseOfPost.getBook().getId());
     }
 
     @Test
