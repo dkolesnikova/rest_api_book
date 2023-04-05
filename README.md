@@ -18,7 +18,7 @@
 <td valign="middle"><strong>Возможность создания книги с пустым значением для поля электронная книга</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
 <td valign="middle"><strong>Возможность создания книги с текстовым значением для поля электронная книга</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
 <td valign="middle"><strong>Возможность создания книги с пустым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги с числовым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>*Failed*</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с числовым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><very strong>Failed</very strong></td></tr>
    </tr>
   </table>
   </br>
