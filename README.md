@@ -1,5 +1,5 @@
-:sun_with_face:# Проект по автоматизации тестирования API
-:blossom:## Тест-кейсы
+:sun_with_face: # Проект по автоматизации тестирования API
+:blossom: ## Тест-кейсы
 <table width="100%" border='0'>
    <tr> 
     <td valign="middle"><strong>Название</strong></td><td valign="middle"><strong>Приоритет</strong></td><td valign="middle"><strong>Статус</strong></td></tr>
