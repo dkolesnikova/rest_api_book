@@ -1,5 +1,5 @@
-:sun_with_face: # Проект по автоматизации тестирования API
-:blossom: ## Тест-кейсы
+# Проект по автоматизации тестирования API
+## Тест-кейсы
 <table width="100%" border='0'>
    <tr> 
     <td valign="middle"><strong>Название</strong></td><td valign="middle"><strong>Приоритет</strong></td><td valign="middle"><strong>Статус</strong></td></tr>
@@ -23,7 +23,7 @@
   </table>
   </br>
 
-:blossom:## Bug report
+## Bug report
 <table width="100%" border='0'>
    <tr> 
     <td valign="middle"><strong>Название</strong></td><td valign="middle"><strong>Шаги</strong></td><td valign="middle"><strong>Ожидаемый результат</strong></td><td valign="middle"><strong>Фактический результат</strong></td><td valign="middle"><strong>Критичность</strong></td></tr>
