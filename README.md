@@ -9,15 +9,15 @@
 <td valign="middle"><strong>Возможность создания новой книги</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
 <td valign="middle"><strong>Возможность обновления информации о книге</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
 <td valign="middle"><strong>Возможность удаления книги</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги без названия</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги с отрицательным значение для поля год</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги без названия</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с отрицательным значение для поля год</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
 <td valign="middle"><strong>Получение данных о несуществующей книге</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
 <td valign="middle"><strong>Возможность обновления информации о несуществующей книге</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
 <td valign="middle"><strong>Возможность удаления несуществующей книги</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги с дробным значением для поля год</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги с пустым значением для поля электронная книга</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги с текстовым значением для поля электронная книга</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
-<td valign="middle"><strong>Возможность создания книги с пустым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с дробным значением для поля год</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с пустым значением для поля электронная книга</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с текстовым значением для поля электронная книга</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с пустым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
 <td valign="middle"><strong>Возможность создания книги с числовым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed:cry:</strong></td></tr>
    </tr>
   </table>
