@@ -2,7 +2,7 @@ package lib.book.helpers;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.github.javafaker.Faker;
-import lib.book.pojo.RequestModel;
+import lib.book.models.RequestModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,7 +17,7 @@ public class Generators {
 
     public static final SecureRandom random = new SecureRandom();
 
-    public static RequestModel getAllDataForPut() {
+    public static RequestModel getAllDataForRequest() {
         Faker faker = new Faker();
         return RequestModel
                 .builder()
