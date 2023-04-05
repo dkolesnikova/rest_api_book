@@ -16,6 +16,9 @@
 <td valign="middle"><strong>Возможность удаления несуществующей книги</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Passed</strong></td></tr>
 <td valign="middle"><strong>Возможность создания книги с дробным значением для поля год</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
 <td valign="middle"><strong>Возможность создания книги с пустым значением для поля электронная книга</strong></td><td valign="middle"><strong>High</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с текстовым значением для поля электронная книга</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с пустым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>Failed</strong></td></tr>
+<td valign="middle"><strong>Возможность создания книги с числовым значением для поля автор</strong></td><td valign="middle"><strong>Middle</strong></td><td valign="middle"><strong>**Failed**</strong></td></tr>
    </tr>
   </table>
   </br>
@@ -28,6 +31,9 @@
   <td valign="middle"><strong>Возможность создания книги с отрицательным значение для поля год</strong></td><td valign="middle"><strong>1.Настроить окружение для отправки API<br>2. В поле year передать отрицательное значение<br>3. Отправить запрос</strong></td><td valign="middle"><strong>Книга не создалась</strong></td><td valign="middle"><strong>Книга создалась</strong></td><td valign="middle"><strong>High</strong></td></tr>
     <td valign="middle"><strong>Возможность создания книги с дробным значением для поля год</strong></td><td valign="middle"><strong>1.Настроить окружение для отправки API<br>2. В поле year передать дробное значение<br>3. Отправить запрос</strong></td><td valign="middle"><strong>Книга не создалась</strong></td><td valign="middle"><strong>Книга создалась</strong></td><td valign="middle"><strong>Middle</strong></td></tr>
     <td valign="middle"><strong>Возможность создания книги с пустым значением для поля электронная книга</strong></td><td valign="middle"><strong>1.Настроить окружение для отправки API<br>2. В поле electronic book передать пустое значение<br>3. Отправить запрос</strong></td><td valign="middle"><strong>Книга не создалась</strong></td><td valign="middle"><strong>Книга создалась</strong></td><td valign="middle"><strong>High</strong></td></tr>
+      <td valign="middle"><strong>Возможность создания книги с текстовым значением для поля электронная книга</strong></td><td valign="middle"><strong>1.Настроить окружение для отправки API<br>2. В поле electronic book передать текстовое значение<br>3. Отправить запрос</strong></td><td valign="middle"><strong>Книга не создалась</strong></td><td valign="middle"><strong>Книга создалась</strong></td><td valign="middle"><strong>Middle</strong></td></tr>
+      <td valign="middle"><strong>Возможность создания книги с пустым значением для поля автор</strong></td><td valign="middle"><strong>1.Настроить окружение для отправки API<br>2. В поле author передать пустое значение<br>3. Отправить запрос</strong></td><td valign="middle"><strong>Книга не создалась</strong></td><td valign="middle"><strong>Книга создалась</strong></td><td valign="middle"><strong>Middle</strong></td></tr>
+      <td valign="middle"><strong>Возможность создания книги с числовым значением для поля автор</strong></td><td valign="middle"><strong>1.Настроить окружение для отправки API<br>2. В поле author передать числовое значение<br>3. Отправить запрос</strong></td><td valign="middle"><strong>Книга не создалась</strong></td><td valign="middle"><strong>Книга создалась</strong></td><td valign="middle"><strong>Middle</strong></td></tr>
    </tr>
   </table>
   </br>
