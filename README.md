@@ -40,5 +40,5 @@
 
 ## Allure Report
 <p align="center">
-<img title="Allure Tests" src="images/Allure_Report.png">
+<img title="Allure Report" src="images/Allure_Report1.png">
 </p>
