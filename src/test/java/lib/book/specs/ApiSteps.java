@@ -1,6 +1,7 @@
 package lib.book.specs;
 
 import lib.book.models.ErrorModel;
+import lib.book.models.ErrorRequestModel;
 import lib.book.models.RequestModel;
 import lib.book.models.ResponseModel;
 
@@ -20,6 +21,16 @@ public class ApiSteps {
                 .extract().as(ResponseModel.class);
     }
 
+    public ResponseModel createNewBook(ErrorRequestModel data) {
+        return given(request)
+                .body(data)
+                .when()
+                .post("/books")
+                .then()
+                .log().status()
+                .extract().as(ResponseModel.class);
+    }
+
     public ResponseModel createNewBook() {
         RequestModel data = getAllDataForRequest();
         return createNewBook(data);
@@ -30,8 +41,8 @@ public class ApiSteps {
         return editBook(id, put);
     }
 
-    public ResponseModel editBook(Integer id,RequestModel put) {
-        return  given(request)
+    public ResponseModel editBook(Integer id, RequestModel put) {
+        return given(request)
                 .body(put)
                 .when()
                 .put("/books/" + id.toString())
@@ -41,7 +52,7 @@ public class ApiSteps {
     }
 
     public ResponseModel getBookById(Integer id) {
-        return  given(request)
+        return given(request)
                 .when()
                 .get("/books/" + id.toString())
                 .then()
@@ -59,13 +70,13 @@ public class ApiSteps {
     }
 
     public void assertErrorOfDeletion(Integer invalidId) {
-         given(request)
+        given(request)
                 .when()
                 .delete("/books/" + invalidId.toString())
                 .then()
                 .log().status()
                 .spec(response404)
-                .extract().as(ErrorModel.class).getError().equals("Book with id "+ invalidId +" not found");
+                .extract().as(ErrorModel.class).getError().equals("Book with id " + invalidId + " not found");
     }
 
     public void assertErrorOfGetting(Integer invalidId) {
@@ -75,7 +86,7 @@ public class ApiSteps {
                 .then()
                 .log().status()
                 .spec(response404)
-                .extract().as(ErrorModel.class).getError().equals("Book with id "+ invalidId +" not found");
+                .extract().as(ErrorModel.class).getError().equals("Book with id " + invalidId + " not found");
     }
 
     public void assertSuccessfulGetting(Integer id) {
@@ -88,13 +99,13 @@ public class ApiSteps {
     }
 
     public void assertErrorOfPutting(Integer invalidId, RequestModel put) {
-                given(request)
+        given(request)
                 .body(put)
                 .when()
                 .put("/books/" + invalidId.toString())
                 .then()
                 .log().status()
                 .spec(response404)
-                .extract().as(ErrorModel.class).equals("Book with id "+ invalidId +" not found");
+                .extract().as(ErrorModel.class).equals("Book with id " + invalidId + " not found");
     }
 }

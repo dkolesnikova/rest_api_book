@@ -24,12 +24,12 @@ public class PositiveTests extends LoginSpecs {
     @Test
     void checkGettingBookById() {
         //Arrange
-        ResponseModel responseModel= apiSteps.createNewBook();
+        ResponseModel responseModel = apiSteps.createNewBook();
         //Act
         given(request)
                 .when()
-                .get("/books/"+ responseModel.getBook().getId())
-        //Assert
+                .get("/books/" + responseModel.getBook().getId())
+                //Assert
                 .then()
                 .log().status()
                 .spec(response200);

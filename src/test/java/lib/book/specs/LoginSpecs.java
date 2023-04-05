@@ -4,7 +4,6 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.with;
 import static io.restassured.http.ContentType.JSON;
 import static lib.book.helpers.CustomApiListener.withCustomTemplates;
@@ -12,7 +11,6 @@ import static lib.book.helpers.CustomApiListener.withCustomTemplates;
 public class LoginSpecs {
 
     public ApiSteps apiSteps = new ApiSteps();
-
 
         public static RequestSpecification request = with()
                 .log().uri()
