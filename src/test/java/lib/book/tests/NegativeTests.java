@@ -57,6 +57,36 @@ public class NegativeTests extends LoginSpecs {
     }
 
     @Test
+    public void checkBookCanBeCreatedWithElectronicBookAsText() {
+        ErrorRequestModel data = getAllDataForErrorRequest();
+        data.setIsElectronicBook("mirror");
+        data.setAuthor(null);
+        data.setYear(null);
+        ResponseModel responseModel = apiSteps.createNewBook(data);
+        apiSteps.assertErrorOfGetting(responseModel.getBook().getId());
+    }
+
+    @Test
+    public void checkAddingBookWithEmptyAuthor() {
+        RequestModel data = getAllDataForRequest();
+        data.setIsElectronicBook(null);
+        data.setAuthor(" ");
+        data.setYear(null);
+        ResponseModel responseModel = apiSteps.createNewBook(data);
+        apiSteps.assertErrorOfGetting(responseModel.getBook().getId());
+    }
+
+    @Test
+    public void checkBookCanBeCreatedWithAuthorAsNumber() {
+        ErrorRequestModel data = getAllDataForErrorRequest();
+        data.setIsElectronicBook(null);
+        data.setAuthor(123);
+        data.setYear(null);
+        ResponseModel responseModel = apiSteps.createNewBook(data);
+        apiSteps.assertErrorOfGetting(responseModel.getBook().getId());
+    }
+
+    @Test
     public void checkGettingBookWithInvalidId() {
         int invalidId = random.nextInt((300 - 200) + 1) + 200;
         apiSteps.assertErrorOfGetting(invalidId);

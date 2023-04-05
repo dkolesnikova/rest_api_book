@@ -15,5 +15,5 @@ public class ErrorRequestModel {
     public String name;
     public Double year;
     public String isElectronicBook;
-    public String author;
+    public Integer author;
 }

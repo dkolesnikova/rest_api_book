@@ -36,7 +36,7 @@ public class Generators {
                 .name(faker.book().title())
                 .year(faker.random().nextDouble())
                 .isElectronicBook(faker.book().author())
-                .author(faker.book().author())
+                .author(faker.random().nextInt((300 - 200) + 1) + 200)
                 .build();
     }
 }

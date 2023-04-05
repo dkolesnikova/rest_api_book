@@ -37,3 +37,8 @@
    </tr>
   </table>
   </br>
+
+## Allure Report
+<p align="center">
+<img title="Allure Tests" src="images/Allure_Report.png">
+</p>
